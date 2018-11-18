@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+		
+		height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+	}
+	ul.topnav {
+		list-style-type: none;
+		float:left;
+		overflow: hidden;
+		margin:0;
+		padding:0;
+		width:100%;
+		background-color: black;
+		z-index: 1;
+	 width:100%;
+		position: fixed;
+    
+	}
+	li.dropdown{
+		float: left;
+		display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+         font-family:verdana;
+         font-size: 20px;
+	}
+	.dropdown-content{
+		display:none;
+		background-color:black;
+        min-width: 160px;
+        color:white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+	}
+	.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color:black;
+    font-size: 18px;
+   
+	}
+	.dropdown-content a:hover{color:black; background-color: #4AF100;}
+	.dropdown:hover .dropdown-content{display: block;}
+	.dropdown:hover{font-size: 26px; transition: .3s;cursor: pointer;}
+  ul.sidenav {
+    list-style-type: none;
+    width:200px;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    background-color: #f1f1f1;
+    margin-top: 70px;
+    padding: 0;
+    display:none;
+  }
+  li.sidelist a{
+    display: block;
+    font-family: verdana;
+    font-size: 20px;
+    padding:8px 16px;
+    text-decoration: none;
+    color:black;
+  }
+  li.sidelist a:hover{background-color: #555; color:white; transition: .2s;}
+  .title{
+  margin-top: 0;
+  margin-left:20px;
+  font-size: 60px;
+  font-family: verdana;
+  color: black; 
+}
+.cap{
+  float: right;
+  font-size: 20px;
+  margin-top: 40px;
+
+}
+	</style>
+</head>
+<body>
+<div class="title">HardCore Fitness<div class="cap">World`s Biggest Health Network</div></div>
+<ul class="topnav">
+<li class="dropdown">Excercises
+<div class="dropdown-content">
+      <a href="str.html">Strength</a>
+      <a href="end.html">Endurance</a>
+      <a href="flex.html">Flexibility</a>
+      <a href="bal.html">Balance</a>
+      <a href="wl.html">Weight Losing</a>
+    </div>
+</li>
+<li class="dropdown">Fitness Videos
+ <div class="dropdown-content">
+       <a href="vl.html">Video Lesson</a>
+       <a href="cc.html">Complete Courses</a>
+       <a href="ws.html">Weekly Series</a>
+    </div>
+</li>
+<li class="dropdown">Supplements
+ <div class="dropdown-content">
+       <a href="protein.html">Protein</a>
+       <a href="bcaa.html"><abbr title="Branched Chain Amino Acids">BCAA</abbr></a>
+       <a href="Glut.html">Glutamine</a>
+       <a href="creat.html">Creatine</a>
+    </div>
+</li>
+<li class="dropdown">Gym Products</li> 
+</ul>
+<ul class="sidenav">
+<li class="sidelist"><a href="enroll.html">Enroll in our program</a></li>
+<li class="sidelist"><a href="dietchart.html">Need a Diet Chart?</a></li>
+<li class="sidelist"><a href="finder.html">Find a Dietitian</a></li>
+<li class="sidelist"><a href="gym.html">Find a gym</a></li>
+<li class="sidelist"><a href="login.html">Login</a></li>
+<li class="sidelist"><a href="signup.html">Sign Up</a></li>
+<li class="sidelist"><a href=""></a></li>
+</ul>
+</body>
+</html>

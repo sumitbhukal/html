@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+		
+		height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+	}
+	ul.topnav {
+		list-style-type: none;
+		float:left;
+		overflow: hidden;
+		margin:0;
+		padding:0;
+		width:100%;
+		background-color: #f1f1f1;
+		z-index: 1;
+		margin-left: 200px;
+		position: fixed;
+	}
+	li.dropdown{
+		float: left;
+		display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+         font-family:verdana;
+         font-size: 23.5px;
+	}
+	.dropdown-content{
+		display:none;
+		background-color: #f1f1f1;
+        min-width: 160px;
+        color:white;
+        
+        z-index: 1;
+	}
+	.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color:#f1f1f1;
+    font-size: 18px;
+   
+	}
+	.dropdown-content a:hover{color:white; background-color: #555;transition:.3s;}
+	.dropdown:hover .dropdown-content{display: block;}
+	.dropdown:hover{font-size: 26px; transition: .3s;cursor: pointer;}
+  ul.sidenav {
+    list-style-type: none;
+    width:200px;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    background-color: #f1f1f1;
+    margin-top: 70px;
+    padding: 0;
+  }
+  li.sidelist a{
+    display: block;
+    font-family: verdana;
+    font-size: 20px;
+    padding:8px 16px;
+    text-decoration: none;
+    color:black;
+  }
+  li.sidelist a:hover{background-color: #555; color:white; transition: .2s;}
+  .headers{
+      margin-left: 250px;
+  margin-top: 80px;
+  font-family: verdana;
+  font-size: 50px;
+  letter-spacing: 5px;
+  position: absolute;
+  z-index: -1;
+  color:black;
+  }
+  .content{
+     margin-left: 250px;
+  margin-top:750px;
+  font-family: verdana;
+  font-size:20px;
+  color:black;
+  position: absolute;
+  z-index: -1;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  }
+  .bookmarks{
+   margin-left: 250px;
+  margin-top:720px;
+  font-family: verdana;
+  font-size:20px;
+  color:black;
+  position: absolute;
+  z-index: -1;
+  margin-right: 80px; 
+  }
+  .bookmarks a{ 
+    text-decoration: underline;
+    color:black;
+   }
+   .vid{
+     width:350px;
+    height:300px;
+    border:solid 1px black;
+    position: relative;
+   }
+   .mySlides {display:none}
+.slideshow-container {
+  margin-left: 250px;
+  max-width: 1000px;
+  position: relative;
+  margin-top: 160px;
+  position: absolute;
+ 
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  margin-top: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+.container {
+    padding: 16px;
+    margin-top: 170px;
+    margin-left: 250px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+	</style>
+</head>
+<body >
+<a href="real1.html"><img src="logo.png" alt="Hardcore fitness" style="position:fixed;width: 200px; height: 70px; float:left;"></a>
+<ul class="topnav">
+<li class="dropdown">Excercises
+<div class="dropdown-content">
+      <a href="stren.html">Strength</a>
+      <a href="end.html">Endurance</a>
+      <a href="flex.html">Flexibility</a>
+      
+      <a href="wl.html">Weight Losing</a>
+    </div>
+</li>
+<li class="dropdown"><a href="baoutus.html">About Us</a></li>
+</ul>
+<ul class="sidenav">
+
+<li class="sidelist"><a href="signup.html">Signup</a></li>
+</ul>
+<div class="headers">Sign up for free</div>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+  <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="uname" required>
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="checkbox" checked="checked"> Remember me
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

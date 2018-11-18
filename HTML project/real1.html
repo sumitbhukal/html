@@ -1,0 +1,276 @@
+<html>
+<head>
+
+
+<style>body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("home.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("back.png");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("front.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+   z-index:1;
+    position:fixed;
+    width:100%
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:verdana;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    font-size:20px;
+    transition:.3s;
+    
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color:transparent;
+}
+
+.dropdown-content a:hover {}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 5s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: .9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    font-size:30px;
+}
+.cont {
+  display: :block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+  width: 35px;
+    height: 5px;
+    margin:  6px 0;
+    background-color: white;
+    transition: .5s;
+
+}
+.change .bar1{
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: white;
+}
+.change .bar2{
+  opacity:0;
+}
+.change .bar3{
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: white;
+}
+.change .sidenav{
+  width:250px;
+  transition: .5s;
+}
+.change .main{
+  margin-left: 250px;
+  transition: .5s;
+}
+.icon-bar {
+    width: 90px;
+    text-align: center;
+    background-color: transparent;
+    float:right;
+    color:black;
+    z-index: ;
+}
+
+.icon-bar a {
+    padding: 16px;
+    display: block;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    font-size: 30px;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+</style></head>
+<body >
+
+<ul>
+  <li><div class="cont" onclick="myfunction(this)"><div class="main">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div></div>
+<div class= "sidenav" id='msn'>
+
+<a href="signup.html">Sign Up</a></div></li>
+ 
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">EXERCISES</a>
+    <div class="dropdown-content">
+      <a href="stren.html">Strength</a>
+      <a href="end.html">Endurance</a>
+      <a href="flex.html">Flexibility</a>
+      
+      <a href="wl.html">Weight Losing</a>
+    </div>
+<a href="aboutus.html" class="dropbtn">ABOUT US</a>
+  </li>
+  
+ 
+</ul>
+
+<script>
+  function myfunction(x) {
+    x.classList.toggle("change");
+    
+  }
+</script>
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">HARDCORE FITNESS</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Health</h3>
+  <p>Health is the level of functional and metabolic efficiency of a living organism. In humans it is the ability of individuals or communities to adapt and self-manage when facing physical, mental or social changes. The World Health Organization (WHO) defined health in its broader sense in its 1948 constitution as "a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity." This definition has been subject to controversy, in particular as lacking operational value, the ambiguity in developing cohesive health strategies, and because of the problem created by use of the word "complete". Other definitions have been proposed, among which a recent definition that correlates health and personal satisfaction. Classification systems such as the WHO Family of International Classifications, including the International Classification of Functioning, Disability and Health (ICF) and the International Classification of Diseases (ICD), are commonly used to define and measure the components of health.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">THE PERFECT BACK</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>FITNESS IS NOT ABOUT BEING BETTER THAN SOMEONE ELSE.... IT`S ABOUT BEING BETTER THAN YOU USED TO BE....</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">THE PERFECT FRONT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>SUFFER THE PAIN OF DISCIPLINE OR SUFFER THE PAIN OF REGRET.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">GO HARD OR GO HOME...</span>
+  </div>
+</div>
+
+</body>
+</html>

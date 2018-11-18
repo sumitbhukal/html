@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Master</title>
+</head>
+<body>
+<form name="frmClientMaster" id="frmClientMaster" action="clientMaster.php" method="post">
+	First Name: <input type="text" name="txtFirstName" value="<?php echo $_POST['txtFirstName']?>"/><br><br>
+	Last Name: <input type="text" name="txtLastName" value="<?php echo $_POST['txtLastName']?>"/><br><br>
+	<textarea name="taAddress" rows="3" cols="18" value="<?php echo $_POST['taAddress']?>"></textarea><br><br>
+	<input type="password" name="pwdPassword" value="<?php echo $_POST ['pwdPassword']?>"/><br><br>
+	<input type="radio" name="rdGender" value="male" checked="checked" <?php echo (isset($_POST['rdGender']) && $_POST['rdGender']=="male" ? 'checked="true"' : '')?>/>Male
+	<input type="radio" name="rdGender" value="female" checked="checked" <?php echo (isset($_POST['rdGender']) && $_POST['rdGender']=="female" ? 'checked="true"' : '')?>/>Female<br><br>
+	<select name="selectCountry">
+		<option <?php if ($_POST['selectCountry']=='India') echo 'Selected';?>>India</option>
+		<option <?php if ($_POST['selectCountry']=='United Kingdom') echo 'Selected';?>>United Kingdom</option>
+		<option <?php if ($_POST['selectCountry']=='USA) echo 'Selected';?>>USA</option>
+		<option <?php if ($_POST['selectCountry']=='Australia') echo 'Selected';?>>Australia</option>
+	</select>
+</form>
+
+</body>
+</html>>

@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+		
+		height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+	}
+	ul.topnav {
+		list-style-type: none;
+		float:left;
+		overflow: hidden;
+		margin:0;
+		padding:0;
+		width:100%;
+		background-color: black;
+		z-index: 1;
+		margin-left: 200px;
+		position: fixed;
+	}
+	li.dropdown{
+		float: left;
+		display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+         font-family:verdana;
+         font-size: 23.5px;
+	}
+	.dropdown-content{
+		display:none;
+		background-color:black;
+        min-width: 160px;
+        color:white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+	}
+	.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color:black;
+    font-size: 18px;
+   
+	}
+	.dropdown-content a:hover{color:black; background-color: #4AF100;}
+	.dropdown:hover .dropdown-content{display: block;}
+	.dropdown:hover{font-size: 26px; transition: .3s;cursor: pointer;}
+  ul.sidenav {
+    list-style-type: none;
+    width:200px;
+    height: 100%;
+    position: fixed;
+    overflow:auto;
+    background-color: #f1f1f1;
+    margin-top: 70px;
+    padding: 0;
+  }
+  li.sidelist a{
+    display: block;
+    font-family: verdana;
+    font-size: 20px;
+    padding:8px 16px;
+    text-decoration: none;
+    color:black;
+  }
+  li.sidelist a:hover{background-color: #555; color:white; transition: .2s;}
+  .headers{
+      margin-left: 250px;
+  margin-top: 80px;
+  font-family: verdana;
+  font-size: 50px;
+  letter-spacing: 5px;
+  position: absolute;
+  z-index: -1;
+  color:black;
+  }
+  .content{
+     margin-left: 250px;
+  margin-top:750px;
+  font-family: verdana;
+  font-size:20px;
+  color:black;
+  position: absolute;
+  z-index: -1;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  }
+  .bookmarks{
+   margin-left: 250px;
+  margin-top:730px;
+  font-family: verdana;
+  font-size:20px;
+  color:black;
+  position: absolute;
+  z-index: -1;
+  margin-right: 80px; 
+  }
+  .bookmarks a{ 
+    text-decoration: underline;
+    color:black;
+   }
+   .vid{
+     width:350px;
+    height:300px;
+    border:solid 1px black;
+    position: relative;
+   }
+    .mySlides {display:none}
+.slideshow-container {
+  margin-left: 250px;
+  max-width: 1000px;
+  position: relative;
+  margin-top: 160px;
+  position: absolute;
+ 
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  margin-top: 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	</style>
+</head>
+<body>
+<a href="real1.html"><img src="logo.png" alt="Hardcore fitness" style="width: 200px; height: 70px; float:left; position: fixed;"></a>
+<ul class="topnav">
+<li class="dropdown">Exercises
+<div class="dropdown-content">
+      <a href="stren.html">Strength</a>
+      <a href="end.html">Endurance</a>
+      <a href="flex.html">Flexibility</a>
+     
+      <a href="wl.html">Weight Losing</a>
+    </div>
+</li>
+<li class="dropdown"><a href="aboutus.html">About Us</a></li>
+</ul>
+<ul class="sidenav">
+
+<li class="sidelist"><a href="signup.html">Sign Up</a></li>
+<li class="sidelist"><a href=""></a></li>
+</ul>
+<div class="headers">WEIGHT LOSING</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="wl1.jpg" style="width:1000px; height: 500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="wl2.jpg" style="width:1000px; height: 500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="wl3.jpg" style="width:1000px; height: 500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 /5 </div>
+  <img src="wl4.jpg" style="width:1000px; height: 500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="wl5.jpg" style="width:1000px; height: 500px;">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+<p class="content"><b>Exercises for weight losing</b><br><br><b>1.Lunges</b><br><br>There are many variations to the lunge, but the plain jane forward lunge is still very effective for weight loss, as it works multiple muscles at once (think: glutes, quads, and hamstrings) for max calorie burn. Get ready to move those short-shorts to the front of your closet.<br>&#187; Stand tall with feet hip-width apart. Place hands on your hips or hold weights, and take a controlled step forward with your right leg.<br>&#187; Keeping your spine tall, lower your body until your front leg and back leg form a 90-degree angle.<br>&#187; Pause, then bring your right leg home to start.<br>&#187; Now do the other side by stepping forward with your left leg.<br>&#187; Repeat 10 times on each side. Do a total of 3 sets.<br><br><iframe class="vid" src="https://www.youtube.com/embed/COKYKgQ8KR0"></iframe><br><br><b>2.Burpees</b><br><br>This exercise effectively targets your core, chest, and legs simultaneously. Feel the burn and know you're building lots of lean muscle.<br>&#187; Stand with your feet shoulder-width apart and arms at your sides. Push your hips back, knees bent, and lower into a squat.<br>&#187; Place your hands on the floor directly in front of you and shift your weight to them. Jump back softly to land on your feet in the plank position.<br>&#187; Jump your feet forward so they land just outside of your hands. Reach your hands up and jump explosively into the air.<br>&#187; Immediately lower back into a squat for the next rep. Repeat 8 to 12 times. Complete 3 sets.<br><br><iframe class="vid" src="https://www.youtube.com/embed/NtYzt57TgI4"></iframe><br><br><b>3.Explosive Lunges</b><br><br>High-intensity workouts like this explosive lunge will get you sweating and torch major calories.<br>&#187; Start with your feet together, hands on your hips. Step forward with your right leg.<br>&#187; Bend until your right leg is at a 90-degree angle. Jump up, switch your legs in midair, and end with the left leg lunged forward.<br>&#187; Repeat the lunges, switching sides for 1 minute. Complete 3 sets.<br><br><iframe class="vid" src="https://www.youtube.com/embed/IszeCqNVkao"></iframe><br><br><b>4.Squats</b><br><br>Squats are one of the best exercises for weight loss. When you do them correctly, you engage your core and entire lower body.<br>&#187; Start with feet hip-width apart, arms either at your sides or holding weights. Keeping your weight in your heels, begin lowering your legs and raising your arms in front of you.<br>&#187; Keeping your back straight, lower until your thighs are parallel to the floor. Remember to keep your knees in line with your toes the entire time.<br>&#187; Maintain an even pace and rise back to a standing position. Repeat 3 sets of 15 reps.<br><br><iframe class="vid" src="https://www.youtube.com/embed/UXJrBgI2RxA"></iframe><br><br><b>5.Double Jump</b><br><br>Take your traditional squats up a notch by incorporating a jump and lunge. The movement will increase your heart rate and you'll feel the burn in your abs, butt, and legs.<br>&#187; Lower into a deep squat and rise up as if you're jumping, but land in a lunge position with your right leg back.<br>&#187; Use momentum to jump from this lunge position back to a squat. Continue for 45 seconds, alternating legs. Do two sets total.<br><br><iframe class="vid" src="https://www.youtube.com/embed/POJDs6lLIlc"></iframe><br><br><b>6.Tabata Drill</b><br><br>These intervals may be short—but trust us, you'll appreciate the off intervals.<br>&#187; Begin with dumbbells up to your shoulders and feet together.<br>&#187;The dumbbells jack straight up, until arms are fully extended. At the same time jump your feet outward. Continue with all-out effort for 20 seconds.<br>&#187;After 10 seconds of rest, place feet shoulder-width apart, dumbbells at your chest.<br>&#187; Begin jabbing the dumbbells across the body. Switching sides, continue with all-out effort for 20 seconds. After 10 seconds of rest, repeat both exercises for 8 rounds.><br><br><iframe class="vid" src="https://www.youtube.com/embed/_KwuCmCYTJo"></iframe><br><br><b>7.Jump Rope</b><br><br>Jump rope is more than a middle school gym class activity: It's a total-body toner made for weight loss. Challenge yourself to complete a full minute of jumping—we won't judge if you bust out the '90s jams too.<br><br>&#187; Check the length of your jump rope by holding it in your hands and ensuring the handles line up with your shoulders.<br>&#187; Start with feet together, hands holding ends of the jump rope, elbows in toward your ribs.<br>&#187; Swing the jump rope and hop over with feet together. Do not jump in between, just jump with each swing of the rope. Continue jumping for 1 minute. Complete 3 sets.<br><br><iframe class="vid" src="https://www.youtube.com/embed/aFoektJK9dU"></iframe><br><br><b>8.Body-Weight Exercises</b><br><br>Body-weight exercises get your heart pumping and your muscles activated. Increasing your muscle mass means more calories burned, even when you're not working out.<br><br>&#187; Start with arms at the your side and feet together. Jump feet apart and raise hands into a jumping jack. From there, place hands on the ground, jump feet out and back in. Raise up back into a jumping jack. Continue for 10 reps. Complete 3 sets.<br>&#187; Stand with legs straight, right hand on your hip and the left leg lifted. Bend and touch your right knee with your left hand. Continue for 10 reps before switching sides. Repeat for 3 sets.<br>&#187;Get into plank position, with hands on the ground and legs outstretched behind you. Begin driving your knee into the opposite shoulder. Continue switching legs for 45 seconds, repeat for 3 sets.<br><br><iframe class="vid" src="https://www.youtube.com/embed/ZA8GzhFh_CQ"></iframe><br><br></p>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); 
+}
+</script>
+</body>
+</html>
